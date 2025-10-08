@@ -1,0 +1,20 @@
+class Vehicle:
+    def start(self):
+        print("Vehicle is starting")
+        return self      # return self for chaining
+
+class Car(Vehicle):
+    def start(self):
+        super().start()   # call parent method
+        print("Car is ready to go")
+        return self       # return self for chaining
+
+    def drive(self):
+        print("Car is driving")
+        return self
+
+c = Car()
+c.start().drive()        # Output:
+# Vehicle is starting
+# Car is ready to go
+# Car is driving
