@@ -1,0 +1,6 @@
+class Car:           # class
+    def __init__(self, brand):
+        self.brand = brand
+
+my_car = Car("Toyota")   # object
+print(my_car.brand)      # Output: Toyota
