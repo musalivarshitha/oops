@@ -1,0 +1,12 @@
+class Grandparent:
+    def greet(self):
+        print("Hello from Grandparent")
+
+class Parent(Grandparent):
+    pass
+
+class Child(Parent):
+    pass
+
+c = Child()
+c.greet()  # Output: Hello from Grandparent
