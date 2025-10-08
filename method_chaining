@@ -1,0 +1,14 @@
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        print(f"Hello, {self.name}!")
+        return self         # return self for chaining
+
+    def farewell(self):
+        print(f"Goodbye, {self.name}!")
+        return self
+
+p = Person("Varshitha")
+p.greet().farewell()       # Output: Hello, Varshitha! \n Goodbye, Varshitha!
