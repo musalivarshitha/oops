@@ -1,0 +1,14 @@
+class Parent:
+    def greet(self):
+        print("Hello from Parent")
+
+class Child1(Parent):
+    pass
+
+class Child2(Parent):
+    pass
+
+c1 = Child1()
+c2 = Child2()
+c1.greet()  # Output: Hello from Parent
+c2.greet()  # Output: Hello from Parent
