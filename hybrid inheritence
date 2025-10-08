@@ -1,0 +1,19 @@
+class A:
+    def a_method(self):
+        print("A method")
+
+class B(A):
+    def b_method(self):
+        print("B method")
+
+class C(A):
+    def c_method(self):
+        print("C method")
+
+class D(B, C):
+    pass
+
+d = D()
+d.a_method()  # Output: A method
+d.b_method()  # Output: B method
+d.c_method()  # Output: C method
