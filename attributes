@@ -1,0 +1,7 @@
+class Person:
+    def __init__(self, name, age):
+        self.name = name   # attribute
+        self.age = age
+
+p = Person("Varshitha", 21)
+print(p.name, p.age)      # Output: Varshitha 21
