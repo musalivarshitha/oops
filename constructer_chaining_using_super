@@ -1,0 +1,11 @@
+class Vehicle:
+    def __init__(self, type):
+        self.type = type
+
+class Car(Vehicle):
+    def __init__(self, type, brand):
+        super().__init__(type)   # calling parent constructor
+        self.brand = brand
+
+c = Car("Sedan", "Toyota")
+print(c.type, c.brand)      # Output: Sedan Toyota
